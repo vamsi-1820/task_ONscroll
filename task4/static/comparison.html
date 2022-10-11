@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>compareProjetcs</title>
+        <link rel="stylesheet" href="/static/sass/style.css">
+        <script type="text/javascript" src="/static/comparison.js" defer></script>
+    </head>
+    <body>
+        <section class="head">
+            <div class="container__fluid">
+                <div class="header">
+                    <div class="header__title">
+                        <a class="header__title__brand">magicbricks</a>
+                        <div class="header__title__location">Noida</div>
+                    </div>
+                    <div class="header__nav">
+                        <div class="header__nav__anchor">MB Prime</div>
+                        <div class="header__nav__anchor">Login</div>
+                        <div class="header__nav__button">Post Property</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="links container" >
+            <div class="links__container">
+                <ul class="links__container__list">
+                    <li class="links__container__list__item"><a class="links__container__list__item__anchor" href="#">Home</a></li>
+                    <li class="links__container__list__item"><a class="links__container__list__item__anchor" href="#">Noida Real Estate</a></li>
+                    <li class="links__container__list__item"><a class="links__container__list__item__anchor" href="#">Property for Sale in Noida</a></li>
+                    <li class="links__container__list__item"><a class="links__container__list__item__anchor" href="#">Flats for Sale in Noida</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="heading container">Compare Projects</div>
+        <div class="heading__discription container">ATS Pristine City in Sector 150 <span>Vs</span> Mahagun Mantra in Sector 150</div>
+        <section class="scroll--nav" id="scroll--nav">
+            <div class="container__fluid">
+                <div class="scroll-nav">
+                    <div class="scroll-nav__row">
+                        <div class="scroll-nav__row__cell">Features</div>
+                        <div class="scroll-nav__row__cell">
+                            <div class="scroll-nav__row__cell__cancelMark"></div>
+                            <div class="scroll-nav__row__cell__name">ATS Pristine</div>
+                            <div class="scroll-nav__row__cell__loc">Sector 1, Noida Extension</div>
+                            <div class="scroll-nav__row__cell__vsMark"></div>
+                        </div>
+                        <div class="scroll-nav__row__cell">
+                            <div class="scroll-nav__row__cell__cancelMark"></div>
+                            <div class="scroll-nav__row__cell__name">Mahagun Mantra</div>
+                            <div class="scroll-nav__row__cell__loc">Sector 3, Noida Extension</div>
+                        </div>
+                        <div class="scroll-nav__row__cell adding">
+                            <div class="scroll-nav__row__cell__text">Add Project to Compare</div>
+                            <button class="scroll-nav__row__cell__button" onclick="OpenpopUp(1)">Add project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation__slide">
+                    <ul class="scroll--nav__navigation">
+                        <li class="scroll--nav__navigation__item ProjectDetails" ><a class="scroll--nav__navigation__item__link" onclick="accOpen(ProjectDetails)"   >Project Details</a></li>
+                        <li class="scroll--nav__navigation__item masterPlan" ><a  class="scroll--nav__navigation__item__link" onclick="accOpen(masterPlan)" >Master Plan</a></li>
+                        <li class="scroll--nav__navigation__item amenities" ><a class="scroll--nav__navigation__item__link" onclick="accOpen(amenities)" >Amenities</a></li>
+                        <li class="scroll--nav__navigation__item floorPlan" ><a class="scroll--nav__navigation__item__link" onclick="accOpen( floorPlan)">Floor Plan</a></li>
+                        <li class="scroll--nav__navigation__item unitPlan" ><a class="scroll--nav__navigation__item__link " onclick="accOpen( unitPlan)" >Unit Plan</a></li>
+                        <li class="scroll--nav__navigation__item localityComparison" ><a class="scroll--nav__navigation__item__link " onclick="accOpen( localityComparison)" >Locality Comparison</a></li>
+                        <li class="scroll--nav__navigation__item builderRepute" ><a class="scroll--nav__navigation__item__link " onclick="accOpen(builderRepute)" >Builder Repute</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="comparison_table">
+            <div class="container">
+                <div class="compared_table">
+                    <div class="compared_table__itemList">     
+                        <div class="compared_table__itemList__content basic" id="basic">
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell title">Features</div>
+                                <div class="compared_table__item__content__row__cell  ">
+                                    <span class="cancelMark"></span>
+                                    <div class="vsMark"></div>
+                                    <div class="compared_table__item__content__row__cell__bold ">ATS Pristine</div>
+                                    <div class="compared_table__item__content__row__cell__lite">Sector 1, Noida Extension </div>
+                                    <div class="compared_table__item__content__row__cell__image">
+                                        <img class="compared_table__item__content__row__cell__image__pic " src="/static/Images/building1.jpg"/>
+                                        <div class="compared_table__item__content__row__cell__image__more"><img class="compared_table__item__content__row__cell__image__more__pic"src="/static/Images/gallary.png">20+</div>
+                                    </div>
+                                    <div class="compared_table__item__content__row__cell__lite">2,3 BHK</div>
+                                    <div class="compared_table__item__content__row__cell__bold">₹84.0 Lac - 1.54 Cr</div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell  ">
+                                    <span class="cancelMark"></span>
+                                    <div class="compared_table__item__content__row__cell__bold">Mahagun Mantra</div>
+                                    <div class="compared_table__item__content__row__cell__lite">Sector 3, Noida Extension</div>
+                                    <div class="compared_table__item__content__row__cell__image">
+                                        <img class="compared_table__item__content__row__cell__image__pic" src="/static/Images/building2.jpg"/>
+                                        <div class="compared_table__item__content__row__cell__image__more"><img class="compared_table__item__content__row__cell__image__more__pic" src="/static/Images/gallary.png">20+</div>
+                                    </div>
+                                    <div class="compared_table__item__content__row__cell__lite">2,3 BHK</div>
+                                    <div class="compared_table__item__content__row__cell__bold">₹84.0 Lac - 1.54 Cr</div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell adding">
+                                    <div class="compared_table__item__content__row__cell__text">Add Project to Compare</div>
+                                    <button class="compared_table__item__content__row__cell__button" onclick="OpenpopUp(1)">Add Project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compared_table__item">
+                        <div class="compared_table__item__title accordion" id="ProjectDetails">Project Details</div>
+                        <div class="compared_table__item__content " >
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Developer Name</div>
+                                <div class="compared_table__item__content__row__cell">ATS Infrastructure</div>
+                                <div class="compared_table__item__content__row__cell">Mahagun Group</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Price/sqft</div>
+                                <div class="compared_table__item__content__row__cell">₹3566</div>
+                                <div class="compared_table__item__content__row__cell">₹3566</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Maintenance/Sqft</div>
+                                <div class="compared_table__item__content__row__cell">₹566</div>
+                                <div class="compared_table__item__content__row__cell">₹566</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Possession Date & Status</div>
+                                <div class="compared_table__item__content__row__cell">20 Jan 2022</div>
+                                <div class="compared_table__item__content__row__cell">17 Jan 2024</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Project Land Area</div>
+                                <div class="compared_table__item__content__row__cell">Ready to Move</div>
+                                <div class="compared_table__item__content__row__cell">Under construction</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compared_table__item">
+                        <div class="compared_table__item__title accordion" id="masterPlan">Master Plan</div>
+                        <div class="compared_table__item__content " >
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Proejct Land Area</div>
+                                <div class="compared_table__item__content__row__cell">50 Acres</div>
+                                <div class="compared_table__item__content__row__cell">30 Acres</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Open Area</div>
+                                <div class="compared_table__item__content__row__cell">6 Acres</div>
+                                <div class="compared_table__item__content__row__cell">5 Acres</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Total Number of Flats</div>
+                                <div class="compared_table__item__content__row__cell">3555</div>
+                                <div class="compared_table__item__content__row__cell">4545</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Density Factor - Units/Acre</div>
+                                <div class="compared_table__item__content__row__cell">35/Acre</div>
+                                <div class="compared_table__item__content__row__cell">25/Acre</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compared_table__item">
+                        <div class="compared_table__item__title accordion" id="amenities">Amenties</div>
+                        <div class="compared_table__item__content " >
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Power Backup</div>
+                                <div class="compared_table__item__content__row__cell rightMark"></div>
+                                <div class="compared_table__item__content__row__cell wrongMark"></div>
+                                <div class="compared_table__item__content__row__cell"></div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Piped Gas</div>
+                                <div class="compared_table__item__content__row__cell rightMark"></div>
+                                <div class="compared_table__item__content__row__cell wrongMark"></div>
+                                <div class="compared_table__item__content__row__cell"></div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Clubhouse</div>
+                                <div class="compared_table__item__content__row__cell rightMark"></div>
+                                <div class="compared_table__item__content__row__cell wrongMark"></div>
+                                <div class="compared_table__item__content__row__cell"></div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading subcellRowHeading">Children’s / toddler’s Play Area</div>
+                                <div class="compared_table__item__content__row__cell subcells">
+                                    <div class="subcells__statusMark rightMark"></div>
+                                    <a class="subcells__text " onclick="OpenpopUp(2)">Sell All 8 Amenties</a>
+                                </div>
+                                <div class="compared_table__item__content__row__cell subcells">
+                                    <div class="subcells__statusMark wrongMark"></div>
+                                    <div class="subcells__border"></div>
+                                    <a class="subcells__text"  onclick="OpenpopUp(2)">Sell All 8 Amenties</a>
+                                </div>
+                                <div class="compared_table__item__content__row__cell subcells">
+                                    <div class="subcells__statusMark "></div>
+                                   
+                                    <div class="subcells__text black">-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compared_table__item">
+                        <div class="compared_table__item__title accordion" id="floorPlan">Floor Plan</div>
+                        <div class="compared_table__item__content " >
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Floor Plan Image</div>
+                                <div class="compared_table__item__content__row__cell floor_plan">
+                                    <div class="floor_plan__select">Select Tower</div>
+                                        <select name="floor_plan__dropdown" class="floor_plan__dropdown select" onclick="togggle(event)">
+                                            <option value=""></option>
+                                            <option value="1">2 BHK-1100 Sq/Ft</option>
+                                            <option value="2">2 BHK-1100 Sq/Ft</option>
+                                            <option value="3">2 BHK-1100 Sq/Ft</option>
+                                            <option value="4">2 BHK-1100 Sq/Ft</option>
+                                            <option value="5">2 BHK-1100 Sq/Ft</option>
+                                            <option value="6">2 BHK-1100 Sq/Ft</option>
+                                            <option value="7">2 BHK-1100 Sq/Ft</option>
+                                        </select>
+                                    <div class="floor_plan__image">
+                                        <img class="floor_plan__image__pic" src="/static/Images/floor plan.jpg">
+                                        <img class="floor_plan__image__icon" src="/static/Images/searchIcon.png">
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell floor_plan">
+                                    <div class="floor_plan__select">Select Tower</div>
+                                    <select name="floor_plan__dropdown" class="floor_plan__dropdown select" onclick="togggle(event)">
+                                        <option value=""></option>
+                                        <option value="1">2 BHK-1100 Sq/Ft</option>
+                                        <option value="2">2 BHK-1100 Sq/Ft</option>
+                                        <option value="3">2 BHK-1100 Sq/Ft</option>
+                                        <option value="4">2 BHK-1100 Sq/Ft</option>
+                                        <option value="5">2 BHK-1100 Sq/Ft</option>
+                                        <option value="6">2 BHK-1100 Sq/Ft</option>
+                                        <option value="7">2 BHK-1100 Sq/Ft</option>
+                                    </select>
+                                    <div class="floor_plan__image">
+                                        <img class="floor_plan__image__pic" src="/static/Images/floor plan.jpg">
+                                        <img class="floor_plan__image__icon" src="/static/Images/searchIcon.png">
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell padadded"></div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Units/Floor</div>
+                                <div class="compared_table__item__content__row__cell">4 Flats</div>
+                                <div class="compared_table__item__content__row__cell">8 Flats</div>
+                                <div class="compared_table__item__content__row__cell ">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Ceiling Height</div>
+                                <div class="compared_table__item__content__row__cell">10 Feet</div>
+                                <div class="compared_table__item__content__row__cell">11 Feet</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Jodi Flat Opportunity</div>
+                                <div class="compared_table__item__content__row__cell">Yes</div>
+                                <div class="compared_table__item__content__row__cell">No</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compared_table__item">
+                        <div class="compared_table__item__title accordion " id="unitPlan">Unit Plan</div>
+                        <div class="compared_table__item__content " >
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Unit Type</div>
+                                <div class="compared_table__item__content__row__cell">2.3 BHK</div>
+                                <div class="compared_table__item__content__row__cell">2,3,4 BHK</div>
+                                <div class="compared_table__item__content__row__cell ">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading subcellRowHeading">Unit Price</div>
+                                <div class="compared_table__item__content__row__cell subcell">
+                                    <div class="subcell__select">Select Configuration</div>
+                                    <select name="subcell__dropdown" class="subcell__dropdown select" onclick="togggle(event)">
+                                        <option value=""></option>
+                                        <option value="1">2 BHK-1100 Sq/Ft</option>
+                                        <option value="2">2 BHK-1100 Sq/Ft</option>
+                                        <option value="3">2 BHK-1100 Sq/Ft</option>
+                                    </select>
+                                    <div class="subcell__price">
+                                        <div class="subcell__price__total">₹42.50 Lacs</div>
+                                        <div class="subcell__price__persqft">₹4300/Sqtf</div>
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell subcell">
+                                    <div class="subcell__select">Select Configuration</div>
+                                    <select name="subcell__dropdown" class="subcell__dropdown select"  onclick="togggle(event)">
+                                        <option value=""></option>
+                                        <option value="1">2 BHK-1100 Sq/Ft</option>
+                                        <option value="2">2 BHK-1100 Sq/Ft</option>
+                                        <option value="3">2 BHK-1100 Sq/Ft</option>
+                                    </select>
+                                  
+                                    <div class="subcell__price">
+                                        <div class="subcell__price__total">₹42.50 Lacs</div>
+                                        <div class="subcell__price__persqft">₹4300/Sqtf</div>
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell subcellRowHeading"></div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Buildup Area</div>
+                                <div class="compared_table__item__content__row__cell">1100 Sq/Ft</div>
+                                <div class="compared_table__item__content__row__cell">1100 Sq/Ft</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading logo" onclick="openPopUp(event)">Area Efficiency 
+                                    <div class="sub_heading__popup">
+                                        <div class="sub_heading__popup__cancelMark" onclick="closePopUp(event)"></div>
+                                        <div class="sub_heading__popup__heading">Area Efficiency</div>
+                                        <div class="sub_heading__popup__formula">Area efficiency = carpet area / built up area</div>
+                                        <div class="sub_heading__popup__discription">Higher area efficiency is desired as it means the living space inside the house is larger</div>
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell">80%</div>
+                                <div class="compared_table__item__content__row__cell">80%</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading subcellRowHeading mini-padadded">Floor Plan Image</div>
+                                <div class="compared_table__item__content__row__cell">
+                                    <div class="floor_plan__image">
+                                        <img class="floor_plan__image__pic" src="/static/Images/floor plan.jpg">
+                                        <img class="floor_plan__image__icon" src="/static/Images/searchIcon.png">
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell">
+                                    <div class="floor_plan__image">
+                                        <img class="floor_plan__image__pic" src="/static/Images/floor plan.jpg">
+                                        <img class="floor_plan__image__icon" src="/static/Images/searchIcon.png">
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell padadded"></div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading subcellRowHeading mini-padadded">Summary of Flat</div>
+                                <div class="compared_table__item__content__row__cell divisons">
+                                    <div class="divisons__data">2 Bed, 2 Baths, 3 Balcony, Kitchen & 1 Living Room</div>
+                                    <div class="divisons__ul">
+                                        <ul>
+                                            <li>Living Room -10ftX10ft</li>
+                                            <li>Bedroom 1 -10ftX10ft</li>
+                                            <li>Bedroom 1 -10ftX10ft</li>
+                                            <li>Kitchen -10ftX10ft</li>
+                                            <li>Kitchen -10ftX10ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell divisons">
+                                    <div class="divisons__data">2 Bed, 2 Baths, 3 Balcony, Kitchen & 1 Living Room</div>
+                                    <div class="divisons__ul">
+                                        <ul>
+                                            <li>Living Room -10ftX10ft</li>
+                                            <li>Bedroom 1 -10ftX10ft</li>
+                                            <li>Bedroom 1 -10ftX10ft</li>
+                                            <li>Kitchen -10ftX10ft</li>
+                                            <li>Kitchen -10ftX10ft</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell divisons">
+                                    <div class="divisons__data minipadded">-</div>
+                                    <div class="divisons__ul">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compared_table__item">
+                        <div class="compared_table__item__title accordion " id="localityComparison">Locality Comparison</div>
+                        <div class="compared_table__item__content " >
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading padaddedExtra">Rates & Trends</div>
+                                <div class="compared_table__item__content__row__cell__large locality_comparison">
+                                    <div class="locality_comparison__buttons">
+                                        <div class="locality_comparison__buttons__item" onclick="makeActive(event)">Resale</div>
+                                        <div class="locality_comparison__buttons__item " onclick="makeActive(event)">Rent</div>
+                                    </div>
+                                    <div class="locality_comparison__bullet_points">
+                                        <div class="locality_comparison__bullet_points__item red">Noida Sec 147 (ATS Pristine) </div>
+                                        <div class="locality_comparison__bullet_points__item green">Noida Sec 153 (Mahagun Mantra </div>
+                                    </div>
+                                    <img class="locality_comparison__image" src="/static/Images/graph.png"/>
+                                </div>
+                                <div class="compared_table__item__content__row__cell "></div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading mini-padadded">Future Rate Trends</div>
+                                <div class="compared_table__item__content__row__cell__large future_trends">
+                                    <div class="future_trends__block">
+                                        <img class="future_trends__block__image" src="/static/Images/future-trends-bg@2x.png">
+                                        <img class="future_trends__block__logo" src="/static/Images/lock.png"/>
+                                        <div class="future_trends__block__text">To view the future rate trends</br> download the app</div>
+                                        <button class="future_trends__block__button">View in App</button>
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell"></div>
+                            </div> 
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading ">Highlights</div>
+                                <div class="compared_table__item__content__row__cell highlights">
+                                    <div class="highlights__info">
+                                        <img class="highlights__info__logo" src="/static/Images/success_thumbsUp.png">
+                                        <div class="highlights__info__text">Wide roads and decent social/retail infrastructure</div>
+                                    </div>
+                                    <div  class="highlights__info">
+                                        <img class="highlights__info__logo" src="/static/Images/Failure_thumbsUp.png">
+                                        <div class="highlights__info__text">Local markets are yet to developed and the sector is little secluded from rest of the developed sectors.</div>
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell highlights">
+                                    <div class="highlights__info">
+                                        <img class="highlights__info__logo" src="/static/Images/success_thumbsUp.png">
+                                        <div class="highlights__info__text">Affordable alternative for end users wanting to stay closer to Noida, due to close connectivity to offices</div>
+                                    </div>
+                                    <div  class="highlights__info">
+                                        <img class="highlights__info__logo" src="/static/Images/Failure_thumbsUp.png">
+                                        <div class="highlights__info__text">Local markets are yet to developed and the sector is little secluded from rest of the developed sectors.</div>
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell"></div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">User Reviews</div>
+                                <div class="compared_table__item__content__row__cell reviews">
+                                    <div class="reviews__info">
+                                        <img class="reviews__info__pic" src="/static/Images/person.png">
+                                        <div class="reviews__info__details">
+                                            <div class="reviews__info__details__name">Vainkateshver</br>Saripalli</div>
+                                            <div class="reviews__info__details__owner">Owner</div>
+                                        </div>
+                                        <div class="reviews__ratings">
+                                            <div class="reviews__ratings__stars">
+                                                <!-- <input type="radio" id="1-star" name="rating1" value="1" class="reviews__ratings__stars__radio"/>
+                                                <label for="1-star" class="reviews__ratings__stars__star">&#9733</label>
+                                                <input type="radio" id="2-star" name="rating1" value="2" class="reviews__ratings__stars__radio"/>
+                                                <label for="2-star" class="reviews__ratings__stars__star">&#9733</label>
+                                                <input type="radio" id="3-star" name="rating1" value="3" class="reviews__ratings__stars__radio"/>
+                                                <label for="3-star" class="reviews__ratings__stars__star">&#9733</label>
+                                                <input type="radio" id="4-star" name="rating1" value="4" class="reviews__ratings__stars__radio"/>
+                                                <label for="4-star" class="reviews__ratings__stars__star">&#9733</label>
+                                                <input type="radio" id="5-star" name="rating1" value="5" class="reviews__ratings__stars__radio"/>
+                                                <label for="5-star" class="reviews__ratings__stars__star">&#9733</label> -->
+                                            </div>
+                                            <div class="reviews__ratings__time">2 weeks ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__discription">
+                                        <div class="reviews__discription__location">Best location in Noida</div>
+                                        <div class="reviews__discription__text">Sec-62 is a great area with all facilities available over all schools, college, university, bus stand, Ho…<span>Read more</span></div>
+                                    </div>
+                                    <a class="reviews__button">View All</a>
+                                </div>
+                                <div class="compared_table__item__content__row__cell reviews">
+                                    <div class="reviews__info">
+                                        <img class="reviews__info__pic" src="/static/Images/person.png">
+                                        <div class="reviews__info__details">
+                                            <div class="reviews__info__details__name">Vainkateshver <br/>Saripalli</div>
+                                            <div class="reviews__info__details__owner">Owner</div>
+                                        </div>
+                                        <div class="reviews__ratings">
+                                            <div class="reviews__ratings__stars">
+                                                <!-- <input type="radio" id="1-stars" name="rating2" value="1" class="reviews__ratings__stars__radio"/>
+                                                <label for="1-stars" class="reviews__ratings__stars__star">&#9733</label>
+                                                <input type="radio" id="2-stars" name="rating2" value="2" class="reviews__ratings__stars__radio"/>
+                                                <label for="2-stars" class="reviews__ratings__stars__star">&#9733</label>
+                                                <input type="radio" id="3-stars" name="rating2" value="3" class="reviews__ratings__stars__radio"/>
+                                                <label for="3-stars" class="reviews__ratings__stars__star">&#9733</label>
+                                                <input type="radio" id="4-stars" name="rating2" value="4" class="reviews__ratings__stars__radio"/>
+                                                <label for="4-stars" class="reviews__ratings__stars__star">&#9733</label>
+                                                <input type="radio" id="5-stars" name="rating2" value="5" class="reviews__ratings__stars__radio"/>
+                                                <label for="5-stars" class="reviews__ratings__stars__star">&#9733</label> -->
+                                            </div>
+                                            <div class="reviews__ratings__time">2 weeks ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__discription">
+                                        <div class="reviews__discription__location">Best location in Noida</div>
+                                        <div class="reviews__discription__text">Sec-62 is a great area with all facilities available over all schools, college, university, bus stand, Ho…<span>Read more</span></div>
+                                    </div>
+                                    <a class="reviews__button">View All</a>
+                                </div>
+                                <div class="compared_table__item__content__row__cell"></div>
+                            </div>    
+                            </div>
+                    </div>
+                    <div class="compared_table__item">
+                        <div class="compared_table__item__title accordion" id="builderRepute">Builder Repute</div>
+                        <div class="compared_table__item__content " >
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading">Experience </div>
+                                <div class="compared_table__item__content__row__cell">18 Years</div>
+                                <div class="compared_table__item__content__row__cell">18 Years</div>
+                                <div class="compared_table__item__content__row__cell">-</div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading semi-padadded">Project Summary</div>
+                                <div class="compared_table__item__content__row__cell subcells">
+                                    <div class="subcells__txt">UC Projects - 6</div>
+                                    <div class="subcells__txt">Delivered Projects- 3</div>
+                                    <div class="subcells__txt">Total Projects- 9</div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell subcells">
+                                    <div class="subcells__txt">UC Projects - 6</div>
+                                    <div class="subcells__txt">Delivered Projects- 3</div>
+                                    <div class="subcells__txt">Total Projects- 9</div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell subcells">
+                                    <div class="subcells__txt">-</div>
+                                    <div class="subcells__txt">-</div>
+                                    <div class="subcells__txt">-</div>
+                                </div>
+                            </div>
+                            <div class="compared_table__item__content__row">
+                                <div class="compared_table__item__content__row__cell sub_heading semi-padadded">RERA Complaints</div>
+                                <div class="compared_table__item__content__row__cell__large future_trends">
+                                    <div class="future_trends__block">
+                                        <img class="future_trends__block__image small" src="/static/Images/future-trends-bg@2x.png">
+                                        <img class="future_trends__block__logo" src="/static/Images/lock.png"/>
+                                        <div class="future_trends__block__text left-padded">To view the complaints</br> download the app</div>
+                                        <button class="future_trends__block__button">View in App</button>
+                                    </div>
+                                </div>
+                                <div class="compared_table__item__content__row__cell"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popUps">
+            <div class="popUp popUp1" id="popUp1">
+                <div class="popUp__background" onclick="ClosePopUp(1)"></div>
+                <div class="popUp__content">
+                    <div class="popUp__content__cancelMark" onclick="ClosePopUp(1)"></div>
+                    <div class="popUp__content__heading">Add Project</div>
+                    <input class="popUp__content__input" id="input" type="text" name="" value="" placeholder="Add a Project for Compare" onkeyup="editable(event)"/>
+                    <div class="popUp__content__subHeading">Suggested Projects for Compare</div>
+                    <div class="popUp__content__listing">
+                        <div class="popUp__content__listing__card">
+                            <div class="popUp__content__listing__card__image">
+                                <img class="popUp__content__listing__card__image__pic" src="/static/Images/small__image.png"/>
+                            </div>
+                            <div class="popUp__content__listing__card__info">
+                                <div class="popUp__content__listing__card__info__name">Stellar Park</div>
+                                <div class="popUp__content__listing__card__info__location">Ecotech 4, Greater Noida West</div>
+                            </div>
+                            <div class="popUp__content__listing__card__btn">Compare</div>
+                        </div>
+                        <div class="popUp__content__listing__card">
+                            <div class="popUp__content__listing__card__image">
+                                <img class="popUp__content__listing__card__image__pic" src="/static/Images/small__image.png"/>
+                            </div>
+                            <div class="popUp__content__listing__card__info">
+                                <div class="popUp__content__listing__card__info__name">Amaatra Homes</div>
+                                <div class="popUp__content__listing__card__info__location">Sec 1, Greater Noida West</div>
+                            </div>
+                            <div class="popUp__content__listing__card__btn">Compare</div>
+                        </div>
+                        <div class="popUp__content__listing__card">
+                            <div class="popUp__content__listing__card__image">
+                                <img class="popUp__content__listing__card__image__pic" src="/static/Images/small__image.png"/>
+                            </div>
+                            <div class="popUp__content__listing__card__info">
+                                <div class="popUp__content__listing__card__info__name">ATS Divino</div>
+                                <div class="popUp__content__listing__card__info__location">Sec 10, Noida Extesnion</div>
+                            </div>
+                            <div class="popUp__content__listing__card__btn">Compare</div>
+                        </div>
+                    </div>
+                    <div class="popUp__content__heading--sm">Project</div>
+                   <ul class="popUp__content__ul">
+                    
+                   </ul>
+                </div>
+            </div>
+            <div class="popUp popUp2" id="popUp2">
+                <div class="popUp__background" onclick="ClosePopUp(2)"></div>
+                <div class="popUp__content popUp__content__amenties">
+                    <div class="popUp__content__cancelMark" onclick="ClosePopUp(2)"></div>
+                    <div class="popUp__content__heading--strong">Amenties</div>
+                    <div class="popUp__content__table">
+                        <div class="popUp__content__table__row head">
+                            <div class="popUp__content__table__row__cell--big thead">List of Amenties</div>
+                            <div class="popUp__content__table__row__cell--small thead">ATS Pristine</div>
+                            <div class="popUp__content__table__row__cell--small thead">Mahagun Mantra Galaxy</div>
+                            <div class="popUp__content__table__row__cell--small ">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Aesthetic Interior</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Private Terrace/Garden</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Marble Flooring<span class="sub-heading__mark">Unique</span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Vaastu Compliant	</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Aesthetically Designed Landscape Garden</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Well Furnished	</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Study room</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Air Conditioned	</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Projector</span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Aerobic Room</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Marble Flooring</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                        <div class="popUp__content__table__row ">
+                            <div class="popUp__content__table__row__cell--big sub-heading"><img class="sub-heading__logo" src="/static/Images/popUpsIcon.png"/>Marble Flooring</div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__rightMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small"><span class="popUp__content__table__row__cell--small__wrongMark"></span></div>
+                            <div class="popUp__content__table__row__cell--small">-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
